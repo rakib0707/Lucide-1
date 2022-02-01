@@ -1,0 +1,583 @@
+/* font-family: 'Source Sans Pro', sans-serif;  */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1, h2,h3,h4,h5,h6,ul, li,a,p{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: url(../images/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    position: relative;
+    text-transform: capitalize;
+    font-size: 18px;
+  
+    padding: 0;
+    margin: 0 15px;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 3px;
+    left: 0;
+    bottom: -5px;
+    background-color: #009688;
+    transition: 0.5s all ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover::after{
+    width: 47%;
+}
+.navbar-light .navbar-nav .nav-link::before{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 3px;
+    right: 0;
+    bottom: -5px;
+    background-color: #009688;
+    transition: 0.5s all ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover::before{
+    width: 47%;
+}
+header h5{
+    color: #008ed6;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+header h1{
+    color: #ffffff;
+    font-size: 45pt;
+    margin-bottom: 20px;
+}
+header p{
+    color: #999999;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.btn-download{
+    color: #fff;
+    text-transform:uppercase;
+    font-size: 18px;
+    background: #008ed6;
+    padding: 0;
+    padding: 10px 20px;
+}
+.btn-features{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    border: 1px solid #9999;
+    padding: 10px 20px;
+    margin-left: 25px;
+}
+.btn:hover {
+    color: #ffffff;
+}
+.hg{
+    min-height: 90vh;
+    align-items: center;
+}
+.phone{
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+}
+.testimonial{ 
+    margin-bottom: 50px;
+}
+.amaging{
+    height: 300px;
+    border-radius: 10px;
+    transition: all 0.7s ease 0s;
+    padding-top: 10px;
+    background: #fff;
+}
+.amaging:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 40px;
+    border-radius: 10px
+}
+.testimonial h5{
+    color: #008ed6;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.testimonial p{
+    color: #999999;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.testimonial h1{
+    color: 1a1a1a;
+    color: #1a1a1a;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.testimonial span{
+    width: 80px;
+    height: 2px;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+.testimonial span::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background: #008ed6;
+    transition: 0.5s;
+}
+.testimonial:hover span::after{
+    width: 48%;
+}
+.testimonial:hover span::before{
+    width: 48%;
+}
+.testimonial span::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    background: #008ed6;
+    transition: 0.5s;
+}
+.icon{
+    border: 1px solid #999;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 35px;
+    color: #008ed6;
+    margin-bottom: 20px;
+}
+.line{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #ededed;
+}
+.device{   
+    padding: 40px;
+}
+.device h4{
+    color: #008ed6;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.device h1{
+    color: #1a1a1a;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.device p{   
+    color: #b399b3;       
+    margin-top: 20px;
+}
+.device span{
+    width: 80px;
+    height: 4px;
+    display: block;
+    position: relative;
+}
+.device span::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background: #008ed6;
+    transition: 0.5s;
+}
+.device:hover span::after{
+    width: 48%;
+}
+.device:hover span::before{
+    width: 48%;
+}
+.device span::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    background: #008ed6;
+    transition: 0.5s;
+}
+.icon-box{
+    margin-top: 30px;
+}
+.icon-box ul{
+    list-style: none;
+}
+.icon-box ul li{
+    display: flex;
+}
+.icon-box ul li i{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+.customize{
+    background: #f2f2f2;
+}
+.customize h5{
+    padding-top: 70px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #008ed6;
+}
+.customize h1{
+    color: #1a1a1a;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.customize p{
+    color: #999999;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.iphone-2{
+    padding-top: 20px;
+}
+.customize span{
+    width: 80px;
+    height: 2px;
+    display: block;
+    position: relative;
+}
+.customize span::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background: #008ed6;
+    transition: 0.5s;
+}
+.customize:hover span::after{
+    width: 48%;
+}
+.customize:hover span::before{
+    width: 48%;
+}
+.customize span::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    background: #008ed6;
+    transition: 0.5s;
+}
+.theam{
+    background: #15141a;
+    padding: 40px 0;
+}
+.theam h1{  
+    color: #c1c0c2;       
+    font-weight: 400;
+}
+.theam h1 span{
+    color: #fff;
+    font-size: 40px;
+}
+.slider{
+    background-image: url(../images/slider.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+}
+.slider p{
+    color: #ffff;
+    font-size: 18px;
+    font-style: italic;
+}
+.slider h5{
+    color: #fff;
+    text-transform: capitalize;
+}
+.slider h4{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+.client-description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 260px;
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+.owl-dots .owl-dot span{
+    display: block;
+    
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    margin:  0 5px;
+    border: 1px solid #999;
+}
+.owl-dots{
+    display: block;
+    text-align: center;
+}
+.owl-dots .active span{
+    width: 10px ;
+    height: 10px;
+    background: #fff;
+}
+.owl-nav{
+    display: none;
+}
+.plan p{
+    color: #008ed6;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+.plan h2{
+    color: #1a1a1a;
+    padding-bottom: 15px;
+}
+
+.pricing_section{
+    margin: 50px 0;
+    text-align: center;   
+}
+.under{   
+    display: inline-block;      
+    width: 80px;       
+    height: 4px;     
+    position: relative;
+}
+.under::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    background:#008ed6;
+    transition: 0.5s;
+}
+.under::before{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 4px;
+    right: 0;
+    bottom: 0;
+    background: #008ed6;
+    transition: 0.5s;
+}
+.pricing_section:hover .under::before{
+    width: 48%;
+}
+.pricing_section:hover .under::after{
+    width: 48%;
+}
+.pricing-table{
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    margin: 25px 0;
+}
+.pricing-table p{
+    padding: 15px 16px;
+    padding-bottom: 15px;
+    color: #999999;
+}
+.pricing-table p span{
+    color: #008ed6;
+}
+.pricing-table h2{
+    padding: 30px 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e0e0e0;
+}
+.price{
+    padding: 30px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.price h1{
+    font-size: 50px;
+}
+.price h1 sup{
+    font-size: 33px;
+}
+.btn-buy{
+    margin: 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #008ed6;
+    border: 1px solid #999;
+}
+.pricing-table:hover h2{
+    color: #008ed6;
+}
+.pricing-table:hover .price{
+    background-color: #008ed6;
+    color: #fff;
+}
+.pricing-table:hover .price p{
+    color: #fff;
+}
+.pricing-table:hover .btn-buy{
+    background: #008ed6;
+    color: #fff;
+}
+.contact-section{
+    padding: 30px 0;
+    background: #ededed;
+    position: relative;
+    padding-bottom: 350px;
+}
+.contact-section i{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 36px;
+    color: #2193d9;
+    cursor: pointer;
+}
+.contact-section h2{
+    color: #1a1a1a;
+    font-size: 40px;
+}
+.contact-section h4{       
+    color: #2193d9;      
+    text-transform: uppercase;      
+    font-size: 16px;
+}
+.contact-section p{   
+    color: #999999;       
+    font-size: 18px;
+}
+.contact-section span{   
+    display: inline-block;
+    width: 80px;       
+    height: 2px;
+    position: relative;
+}
+.contact-section span::after{
+    content: "";
+    position: absolute;
+    background: #008ed6;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    transition: 0.5s;
+}
+.contact-section span::before{
+    content: "";
+    position: absolute;
+    background: #008ed6;
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    transition: 0.5s;
+}
+.contact-section:hover span::before{
+width: 48%;
+}
+.contact-section:hover span::after{
+width: 48%;
+}
+.contact_form{
+    left: 50%;
+    background: #000;
+    padding: 50px 25px;
+    position: absolute;
+    bottom: -60px;
+    border-radius: 5px;
+    width: 50%;
+    transform: translateX(-50%);
+}
+.contact_form form input{
+    background: transparent;
+}
+.contact_form form textarea{
+    background: transparent;
+}
+.contact_form form input::placeholder, .contact_form form textarea::placeholder{
+    color: #fff;
+}
+.contact_form form input[type="submit"]{
+    color: #fff;
+    border: none;
+    background: #008ed6;
+    padding: 5px 30px;
+    float: right;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.contact_form form input:focus, .contact_form form textarea:focus{
+    color: #fff;
+    background-color:transparent;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow:none;
+}
+footer{
+    background: #15141a;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    margin: auto;
+    padding-top: 20px;
+}
+footer ul li i{
+    color: #444348;
+}
+footer p{
+    color: #444348;
+    padding: 14px;
+}
